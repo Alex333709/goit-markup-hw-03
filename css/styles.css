@@ -96,6 +96,7 @@ img {
   /*background: blueviolet;
   border-bottom: 1px solid;*/
   border-color: var(--color-acent);
+  border-bottom: 1px solid var(--color-acent);
 }
 
 .header-navigation {
