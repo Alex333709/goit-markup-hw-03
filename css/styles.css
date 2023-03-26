@@ -24,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 p {
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -95,14 +96,13 @@ img {
 .header {
   /*background: blueviolet;
   border-bottom: 1px solid;*/
-  border-color: var(--color-acent);
+
   border-bottom: 1px solid var(--color-acent);
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .header-logo {
@@ -126,8 +126,6 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-
-  color: var(--dack-color);
 }
 
 .header-list li {
@@ -136,22 +134,23 @@ img {
 }
 
 .header-item {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--dack-color);
 }
 
 .header-list .header-link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  color: var(--dack-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /*.header-list .header-item:not(:last-child) {
   margin-right: 40px;*/
-
+.header-link {
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--color-ocean);
@@ -169,6 +168,7 @@ img {
 
 .header-contacts-list {
   display: flex;
+  gap: 40px;
 }
 /*.header-contacts-list .header-contacts-item + .header-contacts-item {
   margin-left: 40px;*/
@@ -183,7 +183,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  margin-left: 40px;
 }
 
 .header-address-link:hover,
@@ -195,6 +194,7 @@ img {
 .hero {
   background-color: var(--dack-color);
   text-align: center;
+  padding: 188px 0;
 }
 .hero > .hero-title {
 }
@@ -205,12 +205,12 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--color-white-background);
-  padding-top: 188px;
+
   margin-bottom: 48px;
   background-color: var(--dack-color);
   margin-left: auto;
   margin-right: auto;
-  width: 496px;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -229,8 +229,6 @@ img {
   background-color: var(--color-ocean);
 }
 .btn {
-  margin-bottom: 188px;
-
   display: inline-block;
   border-radius: 4px;
   padding: 16px 32px;
@@ -249,15 +247,11 @@ img {
 .hidden-title {
 }
 .advantages-list {
-  padding: 0;
-  margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  gap: 24px;
 }
 .advantages-item {
-  flex-basis: calc(100% / 4 - 15px);
-  margin: 0 auto;
-  gap: 24px;
+  flex-basis: 264px;
 }
 .advantages-title {
   font-weight: 500;
@@ -279,8 +273,7 @@ img {
 /**------------------------------Work--------------------*/
 
 .work {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-bottom: 120px;
   /*background-color: coral;*/
 }
 .work-title {
@@ -305,8 +298,7 @@ img {
 /**------------------------------Team--------------------*/
 .team {
   background-color: var(--color-light);
-  margin-top: 0px;
-  margin-bottom: 0px;
+
   /*background-color: gold;*/
 }
 .team-title {
@@ -337,7 +329,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dack-color);
-  margin-top: 32px;
+
   margin-bottom: 8px;
 }
 .team-text {
@@ -346,15 +338,20 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  margin-bottom: 64px;
+}
+.team-subject {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /**------------------------------FOOTER--------------------*/
 .footer-section {
   background-color: var(--dack-color);
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 .footer-logo {
   display: flex;
-  padding-top: 100px;
+
   margin-bottom: 16px;
 
   font-family: 'Raleway', sans-serif;
@@ -379,7 +376,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-light);
-  padding-bottom: 100px;
 }
 .footer-logo .link {
 }
@@ -415,7 +411,7 @@ img {
 /**----------------------------NAVIBUTTON-------------------------*/
 .navibutton {
   /*background: skyblue;*/
-  margin-bottom: 0;
+  padding-top: 96px;
 }
 
 .menu-item {
@@ -450,8 +446,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
-  margin-top: 0px;
+
   margin-bottom: 72px;
 }
 
@@ -477,7 +472,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--dack-color);
   margin-bottom: 8px;
-  margin-top: 32px;
+
   margin-left: 16px;
 }
 .products-descriptions {
@@ -488,7 +483,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  margin-bottom: 32px;
+
   margin-left: 16px;
 }
 .products-item {
@@ -497,7 +492,9 @@ img {
   border-radius: 0px 0px 4px 4px;
   border-top: none;
 }
+.products-subject {
+  padding: 32px 0;
+}
 /**-----------------------------------portfolioheader-----------------------------------*/
 .section-portfolio {
-  margin-bottom: 0px;
 }
